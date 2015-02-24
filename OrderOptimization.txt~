@@ -4,6 +4,4 @@
 -inline css(compress) into <head><style>... and remove link style.css
 -add media query in link to print.css
 -put google_analytucs.js as async
--download font , minify, and put into <style> in html-->finally removed
--pagespeed say asign size to all pictures...fake take more time, also inline performatter.js, also fake
-
+-download font , minify, and put into <style> in html
