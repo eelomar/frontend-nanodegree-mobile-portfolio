@@ -14,7 +14,9 @@
 -convert pizzeria.jpg -resize 720x540 pizzeria_min2.jpg 
 -convert pizza.jpg -resize 131x170 pizza_min.jpg //change on pizza.html
 -inlice 2 css in pizza.html
--put script async
+-put script async--> go perfect, but pizzas does not appear in background...So leave sync and change how js deal with pizzas in background
+-move some static sources out of the loops-->that solve the problem
+-leave pizza.jpg as default (small-medium-large issue)
 
 
 
