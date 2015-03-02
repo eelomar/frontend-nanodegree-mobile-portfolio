@@ -42,20 +42,23 @@ You might find the FPS Counter/HUD Display useful in Chrome developer tools desc
 I follow the next step to optimize the code:
 
 	Optimeze PageSpeed in index.html
--jpegoptim *.jpg --strip-all (both folder with imgages)
--convert pizzeria.jpg -resize 100x75 pizzeria_min.jpg (resize the pizzeria to load a small image in index.html,leave the original for pizza.html) 
--change link index.html of pizzeria to pizzeria_min
--inline css(compressed) and remove link to style.css
--add media query in link to print.css
--put google_analytics.js as async
--Remove download font, take too much time and there is no change on the web. I tried to download and minify the font, but still takes too mach time
-	Optimize frames in pizza.html
--compress style.css and boostrap, then inline in pizza.html -- use http://csscompressor.com/
--convert pizzeria.jpg -resize 720x540 pizzeria_min2.jpg 
--I try to put main.js async--> Frames are perfect but pizzas does not appear in background. So leave sync and change how js deal with pizzas in background
--move some static sources out of the loops-->that solve the problem
--minify main.js
-Modify README
+
+1. jpegoptim *.jpg --strip-all (both folder with imgages)
+2. convert pizzeria.jpg -resize 100x75 pizzeria_min.jpg (resize the pizzeria to load a small image in index.html,leave the original for pizza.html) 
+3. Change link index.html of pizzeria to pizzeria_min
+4. Inline css(compressed) and remove link to style.css
+5. Add media query in link to print.css
+6. Put google_analytics.js as async
+7. Remove download font, take too much time and there is no change on the web. I tried to download and minify the font, but still takes too mach time
+
+	Optimeze frames in pizza.html
+
+1. Compress style.css and boostrap, then inline in pizza.html -- use http://csscompressor.com/
+2. convert pizzeria.jpg -resize 720x540 pizzeria_min2.jpg 
+3. I try to put main.js async--> Frames are perfect but pizzas does not appear in background. So leave sync and change how js deal with pizzas in background
+4. move some static sources out of the loops-->that solve the problem
+5. minify main.js
+6. Modify README
 
 The page is visible throw:
 
