@@ -1,0 +1,24 @@
+-------pagespeed----------------
+-jpegoptim *.jpg --strip-all (both folder with img)
+-convert pizzeria.jpg -resize 100x75 pizzeria_min.jpg 
+-change link index.html of pizzeria to pizzeria_min
+-inline css(compress) into <head><style>... and remove link style.css
+-add media query in link to print.css
+-put google_analytucs.js as async
+-download font , minify, and put into <style> in html-->finally removed
+-pagespeed say asign size to all pictures...fake take more time, also inline performatter.js, also fake
+
+---------frames---------------
+-compress style.css --http://csscompressor.com/
+-compress boostrap
+-convert pizzeria.jpg -resize 720x540 pizzeria_min2.jpg 
+-convert pizza.jpg -resize 131x170 pizza_min.jpg //change on pizza.html
+-inlice 2 css in pizza.html
+-put script async--> go perfect, but pizzas does not appear in background...So leave sync and change how js deal with pizzas in background
+-move some static sources out of the loops-->that solve the problem
+-leave pizza.jpg as default (small-medium-large issue)
+-minify main.js
+Modify README
+
+
+
