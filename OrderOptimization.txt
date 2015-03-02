@@ -17,6 +17,8 @@
 -put script async--> go perfect, but pizzas does not appear in background...So leave sync and change how js deal with pizzas in background
 -move some static sources out of the loops-->that solve the problem
 -leave pizza.jpg as default (small-medium-large issue)
+-minify main.js
+Modify README
 
 
 
