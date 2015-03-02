@@ -1,7 +1,15 @@
+-------pagespeed----------------
 -jpegoptim *.jpg --strip-all (both folder with img)
 -convert pizzeria.jpg -resize 100x75 pizzeria_min.jpg 
 -change link index.html of pizzeria to pizzeria_min
 -inline css(compress) into <head><style>... and remove link style.css
 -add media query in link to print.css
 -put google_analytucs.js as async
--download font , minify, and put into <style> in html
+-download font , minify, and put into <style> in html-->finally removed
+-pagespeed say asign size to all pictures...fake take more time, also inline performatter.js, also fake
+
+---------fames---------------
+-compress style.css
+
+
+
